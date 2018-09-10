@@ -1,0 +1,43 @@
+{
+  "name": "react-antd-wangeditor",
+  "version": "0.1.2",
+  "description": "",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cpx": "^1.5.0",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "build": "rimraf lib && NODE_ENV=production babel ./src -d lib && cpx src/style.css lib",
+    "example": "parcel examples/uploadImg/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimCN/react-antd-wangeditor.git"
+  },
+  "keywords": [],
+  "author": "timHuang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimCN/react-antd-wangeditor/issues"
+  },
+  "homepage": "https://github.com/TimCN/react-antd-wangeditor#readme",
+  "peerDependencies": {
+    "react": "^0.14.8 || ^15.0.0 || ^16.4.2",
+    "react-dom": "^0.14.8 || ^15.0.0  || ^16.4.2",
+    "wangeditor": "2.x"
+  },
+  "files": [
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "lib/*"
+  ]
+}
